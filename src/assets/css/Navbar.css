@@ -1,0 +1,139 @@
+.navegation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+
+.navegation ul {
+    list-style: none;
+}
+
+.options-navegation {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.options-navegation li{
+
+}
+
+.options-navegation li .option-principal{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+.options-navegation .option-principal svg {
+    width: 12px;
+    height: 7.41px;
+}
+
+.sub-menu{
+    border-radius: 30px;
+    top: 60px;
+    width: 10rem;
+    position: absolute;
+    text-align: start;
+    transition: visibility 2s;
+}
+
+.desactivado {
+    top: 60px;
+    width: 10rem;
+    position: absolute;
+    text-align: start;
+    visibility: hidden;
+    
+}
+
+
+.sub-menu li{
+    cursor: pointer;
+    background-color: #0F3057;
+    
+}
+
+
+.sub-menuItem{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 16px ;
+}
+
+.sub-menuItem:hover{
+    background-color: #153964;
+}
+
+
+@media (max-width:430px){
+    .navegation {
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    left: 0;
+    padding: 0;
+    top: 0;
+    background-color: #0F3057;
+    }
+
+    .navegation-descativado{
+        display: none;
+    }
+
+    .options-navegation {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 48px;
+        font-size: 18px;
+        line-height: 0px;
+    }
+
+
+    .sub-menu{
+        border-radius: 30px;
+        top: 60px;
+        width: 10rem;
+        position:static;
+        text-align: start;
+        transition: visibility 2s;
+    }
+    
+    .desactivado {
+        top: 60px;
+        width: 10rem;
+        position: absolute;
+        text-align: start;
+        visibility: hidden;
+        
+    }
+    
+    
+    .sub-menu li{
+        cursor: pointer;
+        background-color: #0F3057;
+        
+    }
+    
+    
+    .sub-menuItem{
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 16px 0px;
+    }
+    
+    .sub-menuItem:hover{
+        background-color: #153964;
+    }
+   
+}
